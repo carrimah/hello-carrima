@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <div id="theme-btn"></div>
-        <p id="theme-txt">Theme</p>
+        <div id="theme-btn"><div></div> <p id="theme-txt">Theme</p></div>
+        
     </header>
     <section id="hello">
         <h1>Hello</h1>
-        <h2>My name is Carrima, nice to meet you.</h2>
+        <h2>My name is <span id="my-name">Carrima</span>, nice to meet you.</h2>
         <button>Get To Know Me</button>
     </section>
-    <script defer src="./index.js"></script>
+    <script src="./index.js" defer></script>
 </body>
 </html>

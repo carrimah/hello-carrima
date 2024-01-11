@@ -1,9 +1,25 @@
+:root.light{
+    --main-bg: white;
+    --main-col: black;
+    --op-bg: black;
+    --op-col: white;
+}
+:root.dark{
+    --main-bg: black;
+    --main-col: white;
+    --op-bg: white;
+    --op-col: black;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 body{
+    background-color: var(--main-bg);
+    color: var(--main-col);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,16 +32,23 @@ header{
     display: flex; 
     justify-content: end;
     align-items: center;
-    gap: 3px;
     padding: 0 10px;
     position: fixed;
     font-size: 18px;
 }
 #theme-btn{
+    display: flex; 
+    align-items: center;
+    gap: 4px;
+}
+#theme-btn > div{
     height: 18px;
     width: 18px;
-    border: 1px solid black;
+    border: 1px solid var(--main-col);
     border-radius: 50%;
+}
+#theme-btn:hover{
+    cursor: pointer;
 }
 section{
     height: calc(100vh - 60px);
@@ -59,4 +82,7 @@ section{
     width: 1000px;
     background-color: green;
     color: white;
+}
+#my-name:hover{
+    cursor: pointer;
 }
