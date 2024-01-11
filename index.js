@@ -28,7 +28,10 @@ function HeaderActions(){
 }
 
 function HelloActions(){
+    let hello = document.querySelector("#hello")
     let myName = document.querySelector("#my-name");
+    let knowBtn = document.querySelector("#know-btn")
+
     myName.addEventListener("mouseenter", ()=>{
         myName.style.color = "green";
         myName.innerHTML = "KAH-ree-mah";
@@ -36,6 +39,10 @@ function HelloActions(){
     myName.addEventListener("mouseleave", ()=>{
         myName.style.color = "var(--main-col)";
         myName.innerHTML = "Carrima";
+    });
+
+    knowBtn.addEventListener("click", () =>{
+        hello.style.top = "-100vh";
     });
 }
 
