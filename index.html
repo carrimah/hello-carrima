@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrima Hewitt</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header{
+            height: 60px;
+            width: 100%;
+            display: flex; 
+            justify-content: end;
+            align-items: center;
+            gap: 3px;
+            padding: 0 10px;
+            position: fixed;
+            font-size: 18px;
+        }
+        #theme-btn{
+            height: 18px;
+            width: 18px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+        section{
+            height: calc(100vh - 60px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        #hello h1{
+            cursor: default;
+            font-size: 6rem;
+            transition: all 0.5s ease-in;
+        }
+        #hello h1:hover{
+            color: green;
+            font-size: 8rem;
+            transform: translateZ(10px);
+        }
+        #hello h2{
+            font-size: 2rem;
+        }
+        #hello button{
+            font-size: 1.5rem;
+            height: 50px;
+            width: 300px;
+            transition: width 1s ease-in-out;       
+        }
+        #hello button:hover{
+            cursor: pointer;
+            width: 1000px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="theme-btn"></div>
+        <p id="theme-txt">Theme</p>
+    </header>
+    <section id="hello">
+        <h1>Hello</h1>
+        <h2>My name is Carrima, nice to meet you.</h2>
+        <button>Get To Know Me</button>
+    </section>
+    <script defer></script>
+</body>
+</html>
