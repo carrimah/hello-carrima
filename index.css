@@ -74,6 +74,10 @@ section{
     background-color: var(--main-bg);
     z-index: 1;
 }
+
+#hello{
+    z-index: 10;
+}
 #hello h1{
     cursor: default;
     font-size: 6rem;
@@ -99,13 +103,86 @@ section{
     cursor: pointer;
 }
 
-#hello{
-    z-index: 10;
+#facts{
+    z-index: 9;
+    padding: 0 20px;
 }
-#quick-facts{
-    z-index: 3;
+#facts-inner{
+    height: calc(100vh - 100px);
+    width: 100%;
+    margin-top: 70px;
+    border: 4px double;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+#facts-inner h1{
+    position: relative;
+    margin-top: -46px;
+    background-color: var(--main-bg);
+    padding: 10px 20px;
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 3px var(--main-col);
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+#facts-pins{
+    width: 100%;
+    padding: 0 30px;
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.pin-group{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+#my-pic-pin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#my-pic{
+    height: 250px;
+    width: 300px;
+    background-color: #427177;
+}
+#my-pic-txt{
+    width: 100%;
+    height: 120px;
+    padding: 20px 20px 40px;
+    background-color: #eeeae3;
+}
+
+.pin img{
+    width: 200px;
+}
+
+.tape-title{
+    height: 40px;
+    min-width: 150px;
+    display: flex;
+    padding: 0 40px 5px 0;
+    background-color: #dab29b;
+    position: relative;
+}
+.tape-title p{
+    padding: 3px;
+    background-color: #d7c8ae;
+    border: 1px solid #b1a48e;
+}
+.tape-title:first-of-type{
+    align-items: end;
+    top: 20px;
+}
+.tape-title:first-of-type p{
+    margin-left: -20px;
+}
 /*Animations*/
 @keyframes helloGreet {
     0%{
