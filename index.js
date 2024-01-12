@@ -33,7 +33,7 @@ function HelloActions(){
     let knowBtn = document.querySelector("#know-btn")
 
     myName.addEventListener("mouseenter", ()=>{
-        myName.style.color = "green";
+        myName.style.color = "var(--hover-col)";
         myName.innerHTML = "KAH-ree-mah";
     });
     myName.addEventListener("mouseleave", ()=>{
